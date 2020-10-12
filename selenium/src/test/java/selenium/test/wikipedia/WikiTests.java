@@ -21,6 +21,7 @@ public class WikiTests {
 		driver = DriverUtils.getChromeDriver();
 		wikiHome = new WikipediaHomePage(driver);
 		driver.get(wikiHome.url);
+//		driver.manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
 	}
 	
 	@BeforeEach
