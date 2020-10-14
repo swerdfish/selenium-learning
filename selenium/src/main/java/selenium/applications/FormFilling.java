@@ -51,18 +51,13 @@ public class FormFilling {
 				dropdown.selectByVisibleText(entry);
 			}
 		}
-//		selects.forEach(s -> System.out.println(s.getText()));
 		List<WebElement> inputs = form.findElements(By.cssSelector("input:not([type='hidden'])"));
 		inputs.forEach(i -> {
-//			System.out.println(i.getAttribute("type"));
-//			System.out.println(i.getAttribute("id"));
 			String id = i.getAttribute("id");
 			if (id.equals("confirmPassword")) id = "password";
 			String entry = form1.get(id);
 			if (entry != null) i.sendKeys(entry);
 		});
-//		List<WebElement> formGroups = form.findElements(By.cssSelector("div[class^='form-']"));
-//		formGroups.forEach(fg -> System.out.println(fg.getText()));
 		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.MILLISECONDS);
 		form.submit();
 		form = driver.findElement(By.cssSelector("form"));
