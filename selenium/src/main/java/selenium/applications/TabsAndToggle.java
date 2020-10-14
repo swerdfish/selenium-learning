@@ -33,7 +33,7 @@ public class TabsAndToggle {
 	public static List<String> degreesOfFirstSeparation(int n, WikipediaPage wp) {
 		List<String> pageTitles = new ArrayList<>();
 		for (int i=0; i<n; i++) {
-			wp.getLinks().get(1).sendKeys(Keys.chord(Keys.CONTROL, Keys.RETURN));
+			wp.getLinks().get(4).sendKeys(Keys.chord(Keys.CONTROL, Keys.RETURN));
 			List<String> openTabs = new ArrayList<>(driver.getWindowHandles());
 			driver.switchTo().window(openTabs.get(openTabs.size()-1));
 			pageTitles.add(driver.getTitle());
