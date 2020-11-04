@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/eclipse,java,windows,macos,vim
-# Edit at https://www.toptal.com/developers/gitignore?templates=eclipse,java,windows,macos,vim
+# Created by https://www.toptal.com/developers/gitignore/api/eclipse,executable,java,macos,vim,windows
+# Edit at https://www.toptal.com/developers/gitignore?templates=eclipse,executable,java,macos,vim,windows
 
 ### Eclipse ###
 .metadata
@@ -68,6 +68,18 @@ local.properties
 # Spring Boot Tooling
 .sts4-cache/
 
+### Executable ###
+*.app
+*.bat
+*.cgi
+*.com
+*.exe
+*.gadget
+*.jar
+*.pif
+*.vb
+*.wsf
+
 ### Java ###
 # Compiled class file
 *.class
@@ -82,7 +94,6 @@ local.properties
 .mtj.tmp/
 
 # Package Files #
-*.jar
 *.war
 *.nar
 *.ear
@@ -101,6 +112,7 @@ hs_err_pid*
 
 # Icon must end with two \r
 Icon
+
 
 # Thumbnails
 ._*
@@ -168,4 +180,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/eclipse,java,windows,macos,vim
+# End of https://www.toptal.com/developers/gitignore/api/eclipse,executable,java,macos,vim,windows
